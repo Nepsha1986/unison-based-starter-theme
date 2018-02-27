@@ -156,3 +156,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_action( 'widgets_init', 'pt_widgets_init' );
+
+function pt_widgets_init(){
+
+    register_sidebar( array(
+        'name'          => 'Footer Widgets Area',
+        'id'            => 'footer_widget_area',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-area-title">',
+        'after_title'   => '</h4>',
+    ) );
+
+}
+
+

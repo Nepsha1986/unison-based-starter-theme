@@ -1,0 +1,22 @@
+.main-footer {
+  background: $color-primary;
+  color: #fff;
+
+  .container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.pre-footer {
+  border-top: 1px solid $color-primary;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .widget-area {
+    width: calc(100% / 3);
+  }
+}
