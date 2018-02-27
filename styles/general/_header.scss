@@ -1,4 +1,6 @@
 #main-header {
+  border-bottom: 1px solid $font-text-color;
+
   .container {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -21,7 +23,8 @@
       display: inline-block;
 
       &.current_page_item a {
-        color: $color-primary
+        color: $color-primary;
+        font-weight: bold;
       }
 
       a {

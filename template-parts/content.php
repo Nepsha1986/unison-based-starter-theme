@@ -1,14 +1,3 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package unison-based-theme
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -31,7 +20,7 @@
 
 	<?php unison_based_theme_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<?php
 			the_content( sprintf(
 				wp_kses(
@@ -54,6 +43,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php unison_based_theme_entry_footer(); ?>
+        <div class="container">
+            <?php unison_based_theme_entry_footer(); ?>
+        </div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
