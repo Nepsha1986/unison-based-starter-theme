@@ -1,3 +1,5 @@
 .idea/
 /node_modules
+/temp
 /styles/*.css
+/js/unison-components.js
