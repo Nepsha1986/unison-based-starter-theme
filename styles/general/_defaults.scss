@@ -24,3 +24,11 @@ h1, h2, h3 {
   padding: 2rem 15px;
   margin: 0 auto;
 }
+
+/**
+  Unyson full width sections fix
+*/
+.full-width-section {
+  margin-left: -15px;
+  margin-right: -15px;
+}
