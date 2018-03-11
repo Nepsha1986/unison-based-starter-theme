@@ -1,0 +1,23 @@
+.two-column-layout {
+  display: flex;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media (max-width: $screen-lg) {
+    flex-flow: row wrap;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  #secondary {
+    padding: 2rem 15px;
+    min-width: 300px;
+    width: 300px;
+
+    @media (max-width: $screen-lg) {
+      width: 100%;
+    }
+  }
+}

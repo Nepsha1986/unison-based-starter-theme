@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area two-column-layout">
         <main id="main" class="site-main">
-
             <?php
             if (have_posts()) :
 
@@ -36,10 +35,10 @@
             <?php else :
                 get_template_part('template-parts/content', 'none');
             endif; ?>
-
         </main><!-- #main -->
+
+        <?php get_sidebar(); ?>
     </div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
