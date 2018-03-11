@@ -1,0 +1,18 @@
+.btn {
+  font-size: 1rem;
+  padding: 8px 18px;
+}
+
+.btn-primary {
+  border: none;
+  background-color: $color-primary;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: .8;
+  }
+}
