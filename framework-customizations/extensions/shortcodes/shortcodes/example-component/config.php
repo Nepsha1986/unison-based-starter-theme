@@ -6,6 +6,6 @@ $cfg = array(
         'description' => __('Example component', 'ust'),
         'tab' => __('Sections', 'ust'),
         'popup_size' => 'medium',
-        'icon' => 'dashicons dashicons-groups',
+        'icon' => 'dashicons dashicons-groups'
     )
 );
