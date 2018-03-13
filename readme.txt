@@ -25,8 +25,6 @@ Description
 
 = Does this theme support any plugins? =
 
-unison-based-theme includes support for Infinite Scroll in Jetpack.
-
 == Changelog ==
 
 = 1.0 - May 12 2015 =
