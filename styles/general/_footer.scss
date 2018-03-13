@@ -17,11 +17,20 @@
   }
 
   .widget-area {
-    width: calc(100% / 3);
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: calc(100% / 3);
+    }
 
     ul {
       padding-left: 0;
       list-style: none;
+    }
+
+    .icon-wrap {
+      color: $color-primary;
+      margin-right: 15px;
     }
   }
 }
