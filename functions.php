@@ -121,7 +121,7 @@ function unison_based_theme_scripts() {
 
 	wp_enqueue_script( 'unison-based-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js');
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'unison-components', get_template_directory_uri() . '/js/unison-components.js');
 

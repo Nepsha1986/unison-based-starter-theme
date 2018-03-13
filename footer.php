@@ -12,19 +12,19 @@
             <ul class="contacts-list">
                 <?php if ($address) { ?>
                     <li class="address">
-                        <i class="fa fa-map-marker" aria-hidden="false"></i><span><?php echo $address; ?><span>
+                        <span class="icon-wrap"><i class="fas fa-map-marker-alt" aria-hidden="false"></i></span><span><?php echo $address; ?><span>
                     </li>
                 <?php } ?>
 
                 <?php if ($phone) { ?>
                     <li class="phone-number">
-                        <i class="fa fa-phone"></i><a href="tel:"><?php echo $phone; ?></a>
+                        <span class="icon-wrap"><i class="fas fa-phone"></i></span><a href="tel:"><?php echo $phone; ?></a>
                     </li>
                 <?php } ?>
 
                 <?php if ($email) { ?>
                     <li class="email">
-                        <i class="fa fa-envelope"></i><a href="mailto:"><?php echo $email; ?></a>
+                        <span class="icon-wrap"><i class="fas fa-envelope"></i></span><a href="mailto:"><?php echo $email; ?></a>
                     </li>
                 <?php } ?>
             </ul>
