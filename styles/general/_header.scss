@@ -1,5 +1,6 @@
 #main-header {
-  border-bottom: 1px solid $font-text-color;
+  border-bottom: 1px solid #465363;
+  background: $color-primary;
 
   .container {
     padding-top: 10px;
@@ -14,7 +15,22 @@
     display: none;
   }
 
+  .site-title {
+    margin: 0;
+    font-size: 2rem;
+
+    a {
+      color: $color-secondary;
+    }
+  }
+
+  .site-description {
+    color: #fff;
+    margin: 0;
+  }
+
   #primary-menu {
+    font-family: $font-family-alternative;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -23,12 +39,11 @@
       display: inline-block;
 
       &.current_page_item a {
-        color: $color-primary;
-        font-weight: bold;
+        color: $color-secondary;
       }
 
       a {
-        color: $font-text-color;
+        color: #fff;
         text-decoration: none;
       }
 

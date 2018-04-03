@@ -1,6 +1,6 @@
 body, html {
-  font: 300 14px/1.4 $font-family-main;
-  color: $font-text-color;
+  font: 14px/1.4 $font-family-content;
+  color: $text-color-default;
   
   @media (min-width: $screen-md) {
     font-size: 16px;
@@ -21,7 +21,13 @@ a {
   }
 }
 
-h1, h2, h3, h4 {
+p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: $font-family-title;
   color: $color-primary;
 }
 
@@ -39,7 +45,7 @@ strong {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $max-width;
   padding: 2rem 15px;
   margin: 0 auto;
 }
