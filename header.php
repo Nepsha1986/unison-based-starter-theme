@@ -45,7 +45,10 @@
         </div><!-- .site-branding -->
 
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle"><?php esc_html_e('Primary Menu', 'unison-based-theme'); ?></button>
+            <a class="close-menu-btn" href="#">
+                <i class="fas fa-times"></i>
+            </a>
+
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'menu-1',
@@ -53,5 +56,9 @@
             ));
             ?>
         </nav><!-- #site-navigation -->
+
+        <a href="#" class="open-menu-btn">
+            <i class="fas fa-bars"></i>
+        </a>
     </div>
 </header><!-- #masthead -->
