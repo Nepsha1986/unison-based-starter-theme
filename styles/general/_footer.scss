@@ -1,26 +1,45 @@
 .main-footer {
-  background: $color-primary;
+  background: $color-footer-bg;
   color: #fff;
+  text-align: center;
 
   .container {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid $color-soft;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 }
 
 .pre-footer {
+  padding-top: 2rem;
   border-top: 1px solid $text-color-default;
+  background: $color-footer-bg;
+  color: #fff;
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
 
   .container {
     display: flex;
+    padding: 0;
     flex-flow: row wrap;
   }
 
   .widget-area {
     width: 100%;
+    padding: 15px;
 
     @media (min-width: $screen-md) {
-      width: calc(100% / 3);
+      width: calc(100% / 4);
     }
 
     ul {
@@ -29,8 +48,12 @@
     }
 
     .icon-wrap {
-      color: $color-primary;
       margin-right: 15px;
     }
+  }
+
+  .widget-area-title {
+    text-transform: uppercase;
+    color: $color-special;
   }
 }
