@@ -13,8 +13,8 @@
 
   #secondary {
     padding: 2rem 15px;
-    min-width: 300px;
-    width: 300px;
+    min-width: $max-width / 4;
+    width: $max-width / 4;
 
     @media (max-width: $screen-lg) {
       width: 100%;
