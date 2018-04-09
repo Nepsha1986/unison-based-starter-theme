@@ -1,0 +1,26 @@
+.sidebar {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .widget {
+    margin-bottom: 2rem;
+  }
+
+  .widget-title {
+    text-transform: uppercase;
+    color: $color-special;
+    border-bottom: 1px solid $color-special;
+    padding-bottom: .7em;
+  }
+
+  a {
+    color: $text-color-default;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

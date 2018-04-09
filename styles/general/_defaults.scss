@@ -43,6 +43,15 @@ li {
   margin-bottom: .3em;
 }
 
+table {
+  width: 100%;
+}
+
+thead {
+  background: $color-soft;
+  color: #fff;
+}
+
 strong {
   font-weight: bold;
   color: $color-primary;
