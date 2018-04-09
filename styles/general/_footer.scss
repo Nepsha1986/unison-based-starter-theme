@@ -12,6 +12,10 @@
       margin-bottom: 0;
     }
   }
+
+  .copy {
+    font-size: .8rem;
+  }
 }
 
 .pre-footer {
@@ -37,6 +41,10 @@
   .widget-area {
     width: 100%;
     padding: 15px;
+
+    @media (min-width: $screen-sm) {
+      width: calc(100% / 2);
+    }
 
     @media (min-width: $screen-md) {
       width: calc(100% / 4);
