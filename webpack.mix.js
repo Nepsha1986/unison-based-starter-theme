@@ -3,6 +3,7 @@ let mix = require('laravel-mix');
 mix.babel(['framework-customizations/extensions/shortcodes/shortcodes/*/views/*.js'], 'js/unison-components.js');
 
 mix.webpackConfig({
+    devtool: "inline-source-map",
     module: {
         rules: [{
             test: /\.scss/,
@@ -10,4 +11,4 @@ mix.webpackConfig({
             loader: 'import-glob-loader'
         }]
     }
-}).sass('styles/all.scss', 'styles');
+}).sass('styles/all.scss', 'styles/all.css').sourceMaps();
