@@ -17,7 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -44,7 +45,10 @@
         </div><!-- .site-branding -->
 
         <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle"><?php esc_html_e('Primary Menu', 'unison-based-theme'); ?></button>
+            <a class="close-menu-btn" href="#">
+                <i class="fas fa-times"></i>
+            </a>
+
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'menu-1',
@@ -52,5 +56,9 @@
             ));
             ?>
         </nav><!-- #site-navigation -->
+
+        <a href="#" class="open-menu-btn">
+            <i class="fas fa-bars"></i>
+        </a>
     </div>
 </header><!-- #masthead -->

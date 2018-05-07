@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body, html {
-  font: 300 14px/1.4 $font-family-main;
-  color: $font-text-color;
+  font: 14px/1.4 $font-family-content;
+  color: $text-color-default;
   
   @media (min-width: $screen-md) {
     font-size: 16px;
@@ -14,23 +18,32 @@ body, html {
 a {
   font-weight: normal;
   text-decoration: none;
-  color: $color-primary;
+  color: $color-special;
+  transition: .32s;
 
   &:hover {
-    opacity: .7;
+    color: $color-secondary;
   }
 }
 
-h1, h2, h3, h4 {
+p {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: $font-family-title;
   color: $color-primary;
 }
 
-ul {
-
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-li {
-  margin-bottom: .3em;
+figure {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 strong {
@@ -38,16 +51,77 @@ strong {
   color: $color-primary;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 2rem 15px;
-  margin: 0 auto;
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
 }
 
-/**
-  Unyson full width sections fix
-*/
-.full-width-section {
-  margin-left: -15px;
-  margin-right: -15px;
+blockquote {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #eee;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+blockquote {
+  quotes: "" "";
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+:focus {
+  outline: none;
 }

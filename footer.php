@@ -30,24 +30,17 @@
             </ul>
         </div>
 
-        <div class="widget-area info-block">
-            <h4 class="widget-area-title">Information</h4>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer_menu',
-                'container_class' => 'footer-nav',
-                'container' => 'nav',
-            )); ?>
-        </div>
-
-        <?php dynamic_sidebar('footer_widget_area'); ?>
+        <?php dynamic_sidebar('footer_widget_area_1'); ?>
+        <?php dynamic_sidebar('footer_widget_area_2'); ?>
+        <?php dynamic_sidebar('footer_widget_area_3'); ?>
     </div>
 </div>
 
 <footer class="main-footer">
     <div class="container">
-        <?php if ($copyright) { ?>
+        <?php if (get_option('ust_copyright')) { ?>
             <div class="copy">
-                <p><?php echo $copyright; ?></p>
+                <p><?php echo get_option('ust_copyright'); ?></p>
             </div>
         <?php } ?>
     </div>

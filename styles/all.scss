@@ -6,8 +6,15 @@
 
 @import "general/header";
 @import "general/footer";
+@import "general/comments";
+@import "general/galleries";
 @import "general/buttons";
+@import "general/tables";
+@import "general/lists";
+@import "general/helpers";
 @import "general/forms";
+@import "general/sidebar";
+@import "general/single";
 
 @import "../framework-customizations/extensions/shortcodes/shortcodes/**/views/_style.scss";
 

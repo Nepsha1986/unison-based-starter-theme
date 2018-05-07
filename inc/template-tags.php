@@ -91,23 +91,6 @@ if ( ! function_exists( 'unison_based_theme_entry_footer' ) ) :
 			);
 			echo '</span>';
 		}
-
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'unison-based-theme' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
 	}
 endif;
 
@@ -134,7 +117,7 @@ function unison_based_theme_post_thumbnail() {
 
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 		<?php
-			the_post_thumbnail( 'post-thumbnail', array(
+			the_post_thumbnail( 'large', array(
 				'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),

@@ -1,10 +1,22 @@
-$font-family-main: Roboto, sans-serif;
-$color-primary: #243a51;
+$font-family-main: Open Sans, sans-serif;
+$font-family-alternative: Roboto, sans-serif;
 
-$font-text-color: #171717;
+$font-family-title: $font-family-alternative;
+$font-family-content: $font-family-main;
+
+$color-primary: #243a51;
+$color-secondary: #f16234;
+$color-special: #98c3e4;
+$color-soft: #465363;
+$text-color-default: #252525;
+
+$color-footer-bg: #2c3744;
 
 $max-width: 1360px;
 
+/**
+  Breakpoints
+ */
 $screen-sm: 576px;
 $screen-md: 768px;
 $screen-lg: 992px;

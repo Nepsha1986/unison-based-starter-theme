@@ -107,9 +107,36 @@ function unison_based_theme_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'unison-based-theme' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
+
+    register_sidebar(array(
+        'name'          => 'Footer Widgets Area 1',
+        'id'            => 'footer_widget_area_1',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-area-title">',
+        'after_title'   => '</h4>',
+    ) );
+
+    register_sidebar(array(
+        'name'          => 'Footer Widgets Area 2',
+        'id'            => 'footer_widget_area_2',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-area-title">',
+        'after_title'   => '</h4>',
+    ) );
+
+    register_sidebar(array(
+        'name'          => 'Footer Widgets Area 3',
+        'id'            => 'footer_widget_area_3',
+        'before_widget' => '<div class="widget-area">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-area-title">',
+        'after_title'   => '</h4>',
+    ) );
 }
 add_action( 'widgets_init', 'unison_based_theme_widgets_init' );
 
@@ -148,20 +175,5 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-add_action( 'widgets_init', 'pt_widgets_init' );
-
-function pt_widgets_init(){
-
-    register_sidebar( array(
-        'name'          => 'Footer Widgets Area',
-        'id'            => 'footer_widget_area',
-        'before_widget' => '<div class="widget-area">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="widget-area-title">',
-        'after_title'   => '</h4>',
-    ) );
-
-}
 
 

@@ -1,18 +1,33 @@
 .btn {
   font-size: 1rem;
   padding: 8px 18px;
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
 }
 
 .btn-primary {
-  border: none;
   background-color: $color-primary;
-  display: inline-block;
-  cursor: pointer;
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
 
   &:hover {
-    opacity: .8;
+    background: $color-special;
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-special;
+  color: #fff;
+
+  &:hover {
+    background: $color-primary;
+    color: #fff;
   }
 }
