@@ -1,0 +1,17 @@
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
