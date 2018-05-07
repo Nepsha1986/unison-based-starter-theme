@@ -2,22 +2,22 @@
   display: flex;
   max-width: $max-width;
   margin: 0 auto;
-
-  @media (max-width: $screen-lg) {
-    flex-flow: row wrap;
-  }
+  flex-flow: row wrap;
 
   #main {
     width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: 70%;
+    }
   }
 
   #secondary {
     padding: 2rem 15px;
-    min-width: $max-width / 4;
-    width: $max-width / 4;
+    width: 100%;
 
-    @media (max-width: $screen-lg) {
-      width: 100%;
+    @media (min-width: $screen-md) {
+      width: 30%;
     }
   }
 }
