@@ -1,17 +1,3 @@
-(function ($) {
-    $(document).ready(function () {
-        /**
-         * Mobile menu
-         */
+import { mobileMenuInit } from "./modules/main-menu.js"
 
-        $('.open-menu-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.main-navigation').addClass('mobile-active');
-        });
-
-        $('.close-menu-btn').on('click', function (e) {
-            e.preventDefault();
-            $('.main-navigation').removeClass('mobile-active');
-        })
-    });
-})(jQuery);
+mobileMenuInit();
