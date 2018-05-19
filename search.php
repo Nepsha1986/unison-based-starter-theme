@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<section id="primary" class="content-area two-column-layout">
 		<main id="main" class="site-main">
-            <div class="container">
+            <div class="container pt-5 pb-5">
                 <?php
                 if ( have_posts() ) : ?>
 

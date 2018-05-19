@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div id="primary" class="content-area two-column-layout">
-        <main id="main" class="site-main">
+        <main id="main" class="site-main pt-5 pb-5">
             <?php
             if (have_posts()) :
 
