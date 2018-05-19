@@ -18,13 +18,13 @@
 
                 <?php if ($phone) { ?>
                     <li class="phone-number">
-                        <span class="icon-wrap"><i class="fas fa-phone"></i></span><a href="tel:"><?php echo $phone; ?></a>
+                        <span class="icon-wrap"><i class="fas fa-phone"></i></span><a href="tel:<?php echo ust_phone_filter($phone); ?>"><?php echo $phone; ?></a>
                     </li>
                 <?php } ?>
 
                 <?php if ($email) { ?>
                     <li class="email">
-                        <span class="icon-wrap"><i class="fas fa-envelope"></i></span><a href="mailto:"><?php echo $email; ?></a>
+                        <span class="icon-wrap"><i class="fas fa-envelope"></i></span><a href="mailto: <?php echo $email; ?>"><?php echo $email; ?></a>
                     </li>
                 <?php } ?>
             </ul>

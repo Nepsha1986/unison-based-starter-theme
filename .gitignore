@@ -3,4 +3,5 @@
 /temp
 /styles/*.css
 /js/unison-components.js
-/js/unison-components.js
+/js/bundle.js
+
