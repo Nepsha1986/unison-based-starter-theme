@@ -1,12 +1,12 @@
 .main-footer {
   background: $color-footer-bg;
+  border-top: 1px solid #fff;
   color: #fff;
   text-align: center;
 
   .container {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-top: 1px solid $color-soft;
 
     p {
       margin-bottom: 0;
@@ -20,12 +20,12 @@
 
 .pre-footer {
   padding-top: 2rem;
-  border-top: 1px solid $text-color-default;
   background: $color-footer-bg;
   color: #fff;
 
   a {
     color: #fff;
+    font-size: .875rem;
 
     &:hover {
       color: $color-secondary;
@@ -62,6 +62,6 @@
 
   .widget-area-title {
     text-transform: uppercase;
-    color: $color-special;
+    color: $color-secondary;
   }
 }
