@@ -40,27 +40,9 @@ Posts List Block
 
 .posts-list-block {
   .posts-list {
-    display: flex;
-    flex-flow: row wrap;
     margin: 0;
     padding: 0;
-  }
-
-  .list-item {
-    overflow: hidden;
-    max-height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    @media (min-width: $screen-sm ) {
-      width: calc(100% / 2);
-    }
-
-    @media (min-width: $screen-md ) {
-      width: calc(100% / 3);
-    }
+    list-style: none;
   }
 }
 

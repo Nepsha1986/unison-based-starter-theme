@@ -14,16 +14,10 @@
                     <div class="posts-list-block">
                         <ul class="posts-list">
                             <?php while (have_posts()) : the_post(); ?>
-                                <li class="list-item">
-                                    <?php if(has_post_thumbnail()) {
-                                        unison_based_theme_post_thumbnail();
-                                    } else { ?>
-                                        <h2>
-                                            <a href="<?php the_permalink(); ?>">
-                                                <?php the_title(); ?>
-                                            </a>
-                                        </h2>
-                                    <?php } ?>
+                                <li class="list-item mb-5">
+                                    <?php the_title('<h2>','</h2>'); ?>
+                                    <?php the_excerpt(); ?>
+                                    <a class="btn btn-primary" href="<?php the_permalink(); ?>">Learn more</a>
                                 </li>
                             <?php endwhile; ?>
                         </ul>
