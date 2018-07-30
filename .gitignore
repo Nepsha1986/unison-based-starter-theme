@@ -4,4 +4,5 @@
 /styles/*.css
 /js/unison-components.js
 /js/bundle.js
-
+!/framework-customizations/extensions/shortcodes/shortcodes/example-component
+/framework-customizations/extensions/shortcodes/shortcodes

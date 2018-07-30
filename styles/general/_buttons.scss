@@ -1,8 +1,7 @@
 .btn {
   font-size: 1rem;
-  padding: 8px 18px;
+  padding: .7em .2em;
   width: 100%;
-  max-width: 240px;
   text-align: center;
   border: none;
   display: inline-block;
@@ -10,24 +9,22 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: .3s;
+
+  &:hover {
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,.3);
+  }
+
+  @media (min-width: $screen-sm) {
+    max-width: 240px;
+  }
 }
 
 .btn-primary {
   background-color: $color-primary;
   color: #fff;
-
-  &:hover {
-    background: $color-special;
-    color: #fff;
-  }
 }
 
 .btn-secondary {
-  background-color: $color-special;
-  color: #fff;
-
-  &:hover {
-    background: $color-primary;
-    color: #fff;
-  }
+  color: $color-primary;
+  background-color: $color-secondary;
 }

@@ -13,7 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<section class="error-404 not-found">
-                <div class="container">
+                <div class="container pt-5 pb-5">
                     <header class="page-header">
                         <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'unison-based-theme' ); ?></h1>
                     </header><!-- .page-header -->

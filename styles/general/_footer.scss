@@ -4,10 +4,6 @@
   text-align: center;
 
   .container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 1px solid $color-soft;
-
     p {
       margin-bottom: 0;
     }
@@ -15,41 +11,24 @@
 
   .copy {
     font-size: .8rem;
+    border-top: 1px solid #fff;
   }
 }
 
 .pre-footer {
-  padding-top: 2rem;
-  border-top: 1px solid $text-color-default;
   background: $color-footer-bg;
   color: #fff;
 
   a {
     color: #fff;
+    font-size: .875rem;
 
     &:hover {
       color: $color-secondary;
     }
   }
 
-  .container {
-    display: flex;
-    padding: 0;
-    flex-flow: row wrap;
-  }
-
   .widget-area {
-    width: 100%;
-    padding: 15px;
-
-    @media (min-width: $screen-sm) {
-      width: calc(100% / 2);
-    }
-
-    @media (min-width: $screen-md) {
-      width: calc(100% / 4);
-    }
-
     ul {
       padding-left: 0;
       list-style: none;
@@ -62,6 +41,6 @@
 
   .widget-area-title {
     text-transform: uppercase;
-    color: $color-special;
+    color: $color-secondary;
   }
 }

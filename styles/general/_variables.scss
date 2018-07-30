@@ -4,13 +4,13 @@ $font-family-alternative: Roboto, sans-serif;
 $font-family-title: $font-family-alternative;
 $font-family-content: $font-family-main;
 
-$color-primary: #243a51;
-$color-secondary: #f16234;
-$color-special: #98c3e4;
-$color-soft: #465363;
-$text-color-default: #252525;
+$color-primary: #3764af;
+$color-secondary: #dcddde;
 
-$color-footer-bg: #2c3744;
+$color-soft: #465363;
+$text-color-default: #58595b;
+
+$color-footer-bg: $color-primary;
 
 $max-width: 1360px;
 

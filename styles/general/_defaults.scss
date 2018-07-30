@@ -3,7 +3,7 @@
 }
 
 body, html {
-  font: 14px/1.4 $font-family-content;
+  font: 300 14px/1.4 $font-family-content;
   color: $text-color-default;
   
   @media (min-width: $screen-md) {
@@ -18,7 +18,7 @@ body, html {
 a {
   font-weight: normal;
   text-decoration: none;
-  color: $color-special;
+  color: $color-primary;
   transition: .32s;
 
   &:hover {
@@ -36,6 +36,31 @@ h1, h2, h3, h4, h5, h6 {
   color: $color-primary;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -48,7 +73,6 @@ figure {
 
 strong {
   font-weight: bold;
-  color: $color-primary;
 }
 
 dfn,
